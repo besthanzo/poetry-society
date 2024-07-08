@@ -1,16 +1,3 @@
-<div align="center">
-  <a href="https://github.com/xiangshu233/vue3-vant4-mobile">
-    <img alt="Vue3Vant4MobileLogo" width="200" height="200" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/logo.svg">
-  </a>
-</div><br><br>
-
-<p align="center">
-  <img src="https://img.shields.io/github/license/xiangshu233/vue3-vant4-mobile" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/xiangshu233/vue3-vant4-mobile" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/xiangshu233/vue3-vant4-mobile" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/xiangshu233/vue3-vant4-mobile" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/xiangshu233/vue3-vant4-mobile" alt="issues" />
-</p>
 
 <h1 align="center">vue3-vant4-mobile</h1>
 
