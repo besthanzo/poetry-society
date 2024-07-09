@@ -20,17 +20,17 @@
       </div>
       <van-divider class="w-full" />
 
-      <van-cell :border="false" title="个人信息" is-link to="/editUserInfo">
+      <!-- <van-cell :border="false" title="个人信息" is-link to="/editUserInfo">
         <template #icon>
           <i class="i-mingcute:idcard-fill mr-2 text-xl" />
         </template>
-      </van-cell>
+      </van-cell> -->
 
-      <van-cell :border="false" title="账号与安全" is-link to="/accountSetting">
+      <!-- <van-cell :border="false" title="账号与安全" is-link to="/accountSetting">
         <template #icon>
           <i class="i-material-symbols:account-box mr-2 text-xl" />
         </template>
-      </van-cell>
+      </van-cell> -->
 
       <van-cell :border="false" title="主题设置" is-link to="/themeSetting">
         <template #icon>
@@ -38,11 +38,11 @@
         </template>
       </van-cell>
 
-      <van-cell :border="false" title="隐私政策" is-link>
+      <!-- <van-cell :border="false" title="隐私政策" is-link>
         <template #icon>
           <i class="i-material-symbols:list-alt-rounded mr-2 text-xl" />
         </template>
-      </van-cell>
+      </van-cell> -->
 
       <van-cell :border="false" title="退出登录" is-link @click="showLogoutAction = true">
         <template #icon>

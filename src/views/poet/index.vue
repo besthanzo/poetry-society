@@ -1,15 +1,10 @@
 <template>
   <div class="poem-container">
-      <div class="information-left">
-      <p>IP: {{ datas.ipAddress }}</p>
+    <div class="information-left">
+      <p v-if="datas.ipAddress">IP: {{ datas.ipAddress }}</p>
       <p v-if="poem.cacheAt">时间: {{ formattedCacheTime }}</p>
       <div>
-        <van-tag
-          v-for="(tag, index) in poem.matchTags"
-          :key="index"
-          type="success"
-          :style="{ marginRight: '8px' }"
-        >
+        <van-tag v-for="(tag, index) in poem.matchTags" :key="index" type="success" :style="{ marginRight: '8px' }">
           {{ tag }}
         </van-tag>
       </div>
@@ -19,16 +14,15 @@
       <p>{{ poem.origin.dynasty }}</p>
       <p>{{ poem.origin.author }}</p>
     </div>
-  <i class="i-fa:key"></i>
     <div class="content">
-        <p v-for="(line, index) in poem.origin.content" :key="index" :class="getClassForLine(line)">
+      <p v-for="(line, index) in poem.origin.content" :key="index" :class="getClassForLine(line)">
         {{ line }}
       </p>
     </div>
-   <div class="refreshFlow">
-  <van-button type="primary" size="small" class="refresh" @click="loadSentence">下一首</van-button>
-  </div> 
- </div> 
+    <div class="refreshFlow">
+      <van-button type="primary" size="small" class="refresh" @click="loadSentence">下一首</van-button>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -157,7 +151,7 @@ const poem = ref({
 const loadSentence = () => {
   load(
     result => {
-        console.log(result)
+    console.log(result)
     poem.value=result.data;
     datas.value=result;
     },

@@ -79,6 +79,8 @@ export default defineConfig({
     'i-simple-icons:soundcharts',
     'i-simple-icons:docsify',
     'i-material-symbols:award-star',
-    'i-icon-park-solid:refresh-one'
+    'i-icon-park-solid:refresh-one',
+    'i-simple-icons:bookstack', 
+    'i-simple-icons:apachespark'
   ],
 })

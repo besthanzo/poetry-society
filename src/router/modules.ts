@@ -10,7 +10,7 @@ const routeModuleList: Array<RouteRecordRaw> = [
     component: Layout,
     meta: {
       title: '首页',
-      icon: 'i-simple-icons:atlassian',
+      icon: 'i-simple-icons:apachespark',
     },
     // getShowHeader:false,
     children: [
@@ -22,28 +22,79 @@ const routeModuleList: Array<RouteRecordRaw> = [
         },
         component: () => import('@/views/index/index.vue'),
       },
+      
     ],
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    redirect: '/dashboard/index',
+    path: '/anthology',
+    name: 'Anthology',
+    redirect: '/anthology/index',
     component: Layout,
     meta: {
-      title: '主控台',
-      icon: 'i-simple-icons:atlassian',
+      title: '诗集',
+      icon: 'i-simple-icons:bookstack',
     },
+    // getShowHeader:false,
     children: [
       {
         path: 'index',
-        name: 'DashboardPage',
+        name: 'Anthology',
         meta: {
           keepAlive: false,
         },
-        component: () => import('@/views/dashboard/index.vue'),
+        component: () => import('@/views/anthology/index.vue'),
+      },
+      {
+        path: '/list',
+        name: 'List',
+        meta: {
+          title: '遍历',
+          innerPage: true,
+        },
+        component: () => import('@/views/anthology/list.vue'),
+      },
+      {
+        path: '/view',
+        name: 'View',
+        meta: {
+          title: '看故事',
+          innerPage: true,
+        },
+        component: () => import('@/views/anthology/view.vue'),
+      },
+
+      {
+        path: '/caoCaoPoems',
+        name: 'CaoCaoPoems',
+        meta: {
+          title: '曹操的诗',
+          innerPage: true,
+        },
+        component: () => import('@/views/anthology/poems/CaoCaoPoems.vue'),
       },
     ],
   },
+  
+  // {
+  //   path: '/dashboard',
+  //   name: 'Dashboard',
+  //   redirect: '/dashboard/index',
+  //   component: Layout,
+  //   meta: {
+  //     title: '主控台',
+  //     icon: 'i-simple-icons:atlassian',
+  //   },
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       name: 'DashboardPage',
+  //       meta: {
+  //         keepAlive: false,
+  //       },
+  //       component: () => import('@/views/dashboard/index.vue'),
+  //     },
+  //   ],
+  // },
   {
     path: '/poet',
     name: 'Poet',
@@ -104,6 +155,9 @@ const routeModuleList: Array<RouteRecordRaw> = [
   //     },
   //   ],
   // },
+
+
+  
   {
     path: '/my',
     name: 'My',
@@ -127,6 +181,8 @@ const routeModuleList: Array<RouteRecordRaw> = [
   },
 
   // my innerPage
+
+  
   {
     path: '/editUserInfo',
     name: 'EditUserInfo',

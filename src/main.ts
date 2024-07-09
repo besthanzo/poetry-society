@@ -8,6 +8,8 @@ import 'vant/es/image-preview/style'
 // 此重置基于 Tailwind 重置，减去按钮的背景颜色覆盖，以避免与 UI 框架发生冲突。请参阅链接的问题。
 import '@unocss/reset/tailwind-compat.css'
 
+import './styles/poems/poem.css';
+
 // Register icon sprite
 import 'virtual:svg-icons-register'
 import { createApp } from 'vue'
