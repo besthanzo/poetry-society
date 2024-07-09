@@ -42,7 +42,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   const isBuild = command === 'build'
   // command === 'build'
   return {
-    base: '/poetry-society/',
+    base: '/',
     root,
 
     // 别名
